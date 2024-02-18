@@ -112,6 +112,12 @@ override func layoutSubviews() {
 func setupViews() {
     addSubview(alertLabel)
     alertLabel.isHidden = true
+    addSubview(globeImage)
+    addSubview(titleLabel)
+    addSubview(usernameTextField)
+    addSubview(passwordTextField)
+    addSubview(loginButton)
+    addSubview(createButton)
 }
 
 func setupConstraints() {
