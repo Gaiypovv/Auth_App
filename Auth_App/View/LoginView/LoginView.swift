@@ -169,3 +169,13 @@ func setupConstraints() {
         make.height.equalTo(45)
     }
 }
+
+private func createPasswordVisibilityButton() -> UIButton {
+    let button = UIButton(type: .system)
+    button.setImage(UIImage(named: "eyeClosed"), for: .normal)
+    button.setImage(UIImage(named: "eyeOpened"), for: .selected)
+    button.tintColor = .lightGray
+    button.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
+    return button
+}
+
