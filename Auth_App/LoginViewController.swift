@@ -7,13 +7,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class LoginViewController: UIViewController {
+    
+    lazy var loginView = LoginView()
+    //    lazy var loginViewModel = AuthViewModel()
+    
+    override func loadView() {
+        view = loginView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        navigationItem.hidesBackButton = true
+        addTargets()
+        addDelegates()
     }
-
+    
+    func addDelegates() {
+        
+    }
+    
+    func addTargets() {
+        
+    }
 
 }
 

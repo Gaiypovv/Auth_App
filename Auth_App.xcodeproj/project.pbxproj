@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		7F475FAE2B8221C60001D4B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FAD2B8221C60001D4B4 /* AppDelegate.swift */; };
 		7F475FB02B8221C60001D4B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FAF2B8221C60001D4B4 /* SceneDelegate.swift */; };
-		7F475FB22B8221C60001D4B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FB12B8221C60001D4B4 /* ViewController.swift */; };
+		7F475FB22B8221C60001D4B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FB12B8221C60001D4B4 /* LoginViewController.swift */; };
 		7F475FB52B8221C60001D4B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F475FB32B8221C60001D4B4 /* Main.storyboard */; };
 		7F475FB72B8221C80001D4B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F475FB62B8221C80001D4B4 /* Assets.xcassets */; };
 		7F475FBA2B8221C80001D4B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F475FB82B8221C80001D4B4 /* LaunchScreen.storyboard */; };
+		7F475FC92B8225A20001D4B4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FC82B8225A20001D4B4 /* LoginView.swift */; };
+		7F475FCC2B8225C00001D4B4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F475FCB2B8225C00001D4B4 /* SnapKit */; };
+		7F475FCE2B8225C00001D4B4 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7F475FCD2B8225C00001D4B4 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F475FAA2B8221C60001D4B4 /* Auth_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auth_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F475FAD2B8221C60001D4B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F475FAF2B8221C60001D4B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F475FB12B8221C60001D4B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F475FB12B8221C60001D4B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7F475FB42B8221C60001D4B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F475FB62B8221C80001D4B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F475FB92B8221C80001D4B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F475FBB2B8221C80001D4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F475FC82B8225A20001D4B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F475FCC2B8225C00001D4B4 /* SnapKit in Frameworks */,
+				7F475FCE2B8225C00001D4B4 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,72 @@
 		7F475FAC2B8221C60001D4B4 /* Auth_App */ = {
 			isa = PBXGroup;
 			children = (
-				7F475FAD2B8221C60001D4B4 /* AppDelegate.swift */,
-				7F475FAF2B8221C60001D4B4 /* SceneDelegate.swift */,
-				7F475FB12B8221C60001D4B4 /* ViewController.swift */,
+				7F475FC32B8222350001D4B4 /* ViewModel */,
+				7F475FC22B82222A0001D4B4 /* Model */,
+				7F475FC12B82220B0001D4B4 /* View */,
+				7F475FC72B8223C00001D4B4 /* Delegate */,
+				7F475FB12B8221C60001D4B4 /* LoginViewController.swift */,
 				7F475FB32B8221C60001D4B4 /* Main.storyboard */,
 				7F475FB62B8221C80001D4B4 /* Assets.xcassets */,
 				7F475FB82B8221C80001D4B4 /* LaunchScreen.storyboard */,
 				7F475FBB2B8221C80001D4B4 /* Info.plist */,
 			);
 			path = Auth_App;
+			sourceTree = "<group>";
+		};
+		7F475FC12B82220B0001D4B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F475FC62B8222690001D4B4 /* LoginView */,
+				7F475FC52B8222570001D4B4 /* RegistrationView */,
+				7F475FC42B8222440001D4B4 /* WelcomeView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F475FC22B82222A0001D4B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F475FC32B8222350001D4B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F475FC42B8222440001D4B4 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		7F475FC52B8222570001D4B4 /* RegistrationView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RegistrationView;
+			sourceTree = "<group>";
+		};
+		7F475FC62B8222690001D4B4 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				7F475FC82B8225A20001D4B4 /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		7F475FC72B8223C00001D4B4 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7F475FAF2B8221C60001D4B4 /* SceneDelegate.swift */,
+				7F475FAD2B8221C60001D4B4 /* AppDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,10 @@
 			dependencies = (
 			);
 			name = Auth_App;
+			packageProductDependencies = (
+				7F475FCB2B8225C00001D4B4 /* SnapKit */,
+				7F475FCD2B8225C00001D4B4 /* SnapKit-Dynamic */,
+			);
 			productName = Auth_App;
 			productReference = 7F475FAA2B8221C60001D4B4 /* Auth_App.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 7F475FA12B8221C60001D4B4;
+			packageReferences = (
+				7F475FCA2B8225C00001D4B4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 7F475FAB2B8221C60001D4B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F475FB22B8221C60001D4B4 /* ViewController.swift in Sources */,
+				7F475FB22B8221C60001D4B4 /* LoginViewController.swift in Sources */,
 				7F475FAE2B8221C60001D4B4 /* AppDelegate.swift in Sources */,
+				7F475FC92B8225A20001D4B4 /* LoginView.swift in Sources */,
 				7F475FB02B8221C60001D4B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +432,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F475FCA2B8225C00001D4B4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F475FCB2B8225C00001D4B4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F475FCA2B8225C00001D4B4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7F475FCD2B8225C00001D4B4 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F475FCA2B8225C00001D4B4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F475FA22B8221C60001D4B4 /* Project object */;
 }
