@@ -92,8 +92,6 @@ class LoginView: UIView {
         return button
     }()
 
-}
-
 // Mark: - Inits
 override init(frame: CGRect) {
     super.init(frame: frame)
@@ -179,3 +177,12 @@ private func createPasswordVisibilityButton() -> UIButton {
     return button
 }
 
+@objc private func togglePasswordVisibility(_ sender: UIButton) {
+    sender.isSelected = !sender.isSelected
+    if sender.isSelected {
+        passwordTextField.isSecureTextEntry = false
+    } else {
+        passwordTextField.isSecureTextEntry = true
+    }
+}
+}
