@@ -127,4 +127,45 @@ func setupConstraints() {
         make.width.equalTo(340)
         make.height.equalTo(50)
     }
+    
+    globeImage.snp.makeConstraints{ make in
+        make.centerX.equalToSuperview()
+        make.top.equalToSuperview().inset(120)
+        make.width.height.equalTo(220)
+    }
+    
+    titleLabel.snp.makeConstraints{ make in
+        make.centerX.equalToSuperview()
+        make.top.equalTo(globeImage.snp.bottom).offset(40)
+        make.width.equalTo(340)
+        make.height.equalTo(40)
+    }
+    
+    usernameTextField.snp.makeConstraints{ make in
+        make.centerX.equalToSuperview()
+        make.top.equalTo(titleLabel.snp.bottom).offset(40)
+        make.width.equalTo(340)
+        make.height.equalTo(45)
+    }
+    
+    passwordTextField.snp.makeConstraints{ make in
+        make.centerX.equalToSuperview()
+        make.top.equalTo(usernameTextField.snp.bottom).offset(20)
+        make.width.equalTo(340)
+        make.height.equalTo(45)
+    }
+    
+    loginButton.snp.makeConstraints{ make in
+        make.centerX.equalToSuperview()
+        make.top.equalTo(passwordTextField.snp.bottom).offset(30)
+        make.width.equalTo(340)
+        make.height.equalTo(45)
+    }
+    
+    createButton.snp.makeConstraints{ make in
+        make.centerX.equalToSuperview()
+        make.top.equalTo(loginButton.snp.bottom).offset(25)
+        make.width.equalTo(340)
+        make.height.equalTo(45)
+    }
 }
