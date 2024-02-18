@@ -16,6 +16,7 @@
 		7F475FC92B8225A20001D4B4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FC82B8225A20001D4B4 /* LoginView.swift */; };
 		7F475FCC2B8225C00001D4B4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F475FCB2B8225C00001D4B4 /* SnapKit */; };
 		7F475FCE2B8225C00001D4B4 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7F475FCD2B8225C00001D4B4 /* SnapKit-Dynamic */; };
+		7F475FD02B8244B80001D4B4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FCF2B8244B80001D4B4 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7F475FB92B8221C80001D4B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F475FBB2B8221C80001D4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F475FC82B8225A20001D4B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7F475FCF2B8244B80001D4B4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		7F475FC42B8222440001D4B4 /* WelcomeView */ = {
 			isa = PBXGroup;
 			children = (
+				7F475FCF2B8244B80001D4B4 /* WelcomeView.swift */,
 			);
 			path = WelcomeView;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F475FD02B8244B80001D4B4 /* WelcomeView.swift in Sources */,
 				7F475FB22B8221C60001D4B4 /* LoginViewController.swift in Sources */,
 				7F475FAE2B8221C60001D4B4 /* AppDelegate.swift in Sources */,
 				7F475FC92B8225A20001D4B4 /* LoginView.swift in Sources */,

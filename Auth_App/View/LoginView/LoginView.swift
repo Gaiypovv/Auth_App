@@ -5,7 +5,7 @@
 //  Created by Eldar Gaiypov on 18/2/24.
 //
 
-import Foundation
+import UIKit
 import SnapKit
 
 class LoginView: UIView {
@@ -29,7 +29,7 @@ class LoginView: UIView {
         return imageView
     }()
     
-    lazy titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textColor = .black
