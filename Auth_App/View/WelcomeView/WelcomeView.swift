@@ -20,6 +20,45 @@ class WelcomeView: UIView {
         return label
     }()
     
+    lazy var subtitleLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = .black
+        label.textAlignment = .center
+        label.text = "Lorby is your personal tutor"
+        return label
+    }()
+    
+    lazy var welcomeImage: UIImageView = {
+        let image = UIImage(named: "welcome")
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
+    lazy var logoutButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Log out", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
+    
+    lazy var containerView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .white
+        view.alpha = 1.0
+        return view
+    }()
+
+    
+    lazy var alertView: LogoutAlertView = {
+        let alertView = LogoutAlertView()
+        alertView.backgroundColor = .white
+        alertView.alpha = 1.0
+        alertView.isHidden = true
+        return alertView
+    }()
     // MARK: - INITS
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,17 +76,48 @@ class WelcomeView: UIView {
     
     func setupViews() {
         backgroundColor = .white
-        
+        addSubview(containerView)
+        containerView.addSubview(titleLabel)
+        containerView.addSubview(subtitleLabel)
+        containerView.addSubview(welcomeImage)
+        containerView.addSubview(logoutButton)
+        addSubview(alertView)
     }
     
     func setupConstraints() {
         
-        // containerView
         containerView.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.bottom.equalToSuperview()
             make.left.equalToSuperview()
             make.right.equalToSuperview()
+        }
+        
+        titleLabel.snp.makeConstraints{ make in
+            make.centerX.equalTo(containerView.snp.centerX)
+            make.top.equalTo(containerView.snp.top).offset(130)
+            make.width.equalTo(275)
+            make.height.equalTo(35)
+        }
+        
+        subtitleLabel.snp.makeConstraints{ make in
+            make.centerX.equalTo(containerView.snp.centerX)
+            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.width.equalTo(310)
+            make.height.equalTo(30)
+        }
+        
+        welcomeImage.snp.makeConstraints{ make in
+            make.centerX.equalTo(containerView.snp.centerX)
+            make.centerY.equalTo(containerView.snp.centerY)
+            make.width.height.equalTo(315)
+        }
+        
+        logoutButton.snp.makeConstraints{ make in
+            make.centerX.equalTo(containerView.snp.centerX)
+            make.bottom.equalTo(containerView.snp.bottom).offset(-75)
+            make.width.equalTo(300)
+            make.height.equalTo(25)
         }
     }
     
