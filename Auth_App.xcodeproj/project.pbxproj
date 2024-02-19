@@ -17,6 +17,7 @@
 		7F475FCC2B8225C00001D4B4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7F475FCB2B8225C00001D4B4 /* SnapKit */; };
 		7F475FCE2B8225C00001D4B4 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7F475FCD2B8225C00001D4B4 /* SnapKit-Dynamic */; };
 		7F475FD02B8244B80001D4B4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FCF2B8244B80001D4B4 /* WelcomeView.swift */; };
+		7F475FD22B83BFA20001D4B4 /* LogoutAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F475FD12B83BFA20001D4B4 /* LogoutAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7F475FBB2B8221C80001D4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F475FC82B8225A20001D4B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7F475FCF2B8244B80001D4B4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		7F475FD12B83BFA20001D4B4 /* LogoutAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				7F475FCF2B8244B80001D4B4 /* WelcomeView.swift */,
+				7F475FD12B83BFA20001D4B4 /* LogoutAlertView.swift */,
 			);
 			path = WelcomeView;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				7F475FD02B8244B80001D4B4 /* WelcomeView.swift in Sources */,
 				7F475FB22B8221C60001D4B4 /* LoginViewController.swift in Sources */,
 				7F475FAE2B8221C60001D4B4 /* AppDelegate.swift in Sources */,
+				7F475FD22B83BFA20001D4B4 /* LogoutAlertView.swift in Sources */,
 				7F475FC92B8225A20001D4B4 /* LoginView.swift in Sources */,
 				7F475FB02B8221C60001D4B4 /* SceneDelegate.swift in Sources */,
 			);

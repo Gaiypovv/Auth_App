@@ -5,7 +5,7 @@
 //  Created by Eldar Gaiypov on 18/2/24.
 //
 
-import Foundation
+import UIKit
 import SnapKit
 
 class WelcomeView: UIView {
